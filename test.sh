@@ -7,7 +7,7 @@
 me=$( basename "${0}" )
 
 deviceid='00800001eb'
-apikey='ebac74ce-987f-4411-8f43-87f876e14d9a'
+apikey='__devicekey__'
 
 # register
 register='{"action":"register","deviceid":"'"${deviceid}"'","apikey":"'"${apikey}"'"}'

@@ -19,8 +19,8 @@ else
 fi
 
 deviceid='00800001eb'
-devkey='ebac74ce-987f-4411-8f43-87f876e14d9a'
-userkey='d3d2bf4b-eb45-479d-9266-c277e3f54dc6'
+devkey='__devicekey__'
+userkey='__userkey__'
 
 dev='"deviceid":"'"${deviceid}"'","apikey":"'"${devkey}"'",'
 user='"deviceid":"'"${deviceid}"'","apikey":"'"${userkey}"'",'

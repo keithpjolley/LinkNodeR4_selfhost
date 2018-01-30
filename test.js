@@ -3,7 +3,7 @@ const path    = require('path');
 const dbconf  = require(path.join('/Users/kjolley/Dropbox/prj/site/node/linknode', 'private', 'mysql', 'dbconf'));
 const ls_rw   = dbconf.local.linksprite_rw;
 const mydevid  = '00800001eb';
-const myapikey = 'ebac74ce-987f-4411-8f43-87f876e14d9a';
+const myapikey = '__devicekey__'
 const args     = [mydevid,myapikey];
 const query    = 'SELECT devicekey, "foo" AS bar  FROM apikeys WHERE deviceid = ? AND userkey = ?';
 

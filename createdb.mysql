@@ -4,7 +4,7 @@ USE linksprite;
 DROP USER IF EXISTS 'linksprite_rw'@'localhost';
 
 CREATE USER IF NOT EXISTS 'linksprite_rw'@'localhost'
-  IDENTIFIED BY ')*Vo-S-PnHK.TnOiB*aQ7V1kcWRhL(i~-.Yt=sbs) yNt>ezj6R%}.QNixjX/siw';
+  IDENTIFIED BY '__my_passwd__';
 GRANT SELECT, UPDATE, INSERT ON linksprite.* TO 'linksprite_rw'@'localhost';
 FLUSH PRIVILEGES;
 
@@ -26,5 +26,5 @@ INSERT INTO devices (deviceid, devicetype, description, params)
   VALUES ("00800001eb", "R4", "LinkNode R4 V1.0 06/01/2016", '{"alpha":"beta","gamma":7,"delta":[1,2,3],"iota":{"a":1,"b":2,"c":3}}');
 
 #INSERT INTO devicestate (apikey, deviceid, params)
-#  VALUES ("ebac74ce-987f-4411-8f43-87f876e14d9a", "00800001eb", JSON_OBJECT("foo", "bar", "this", 7));
+#  VALUES ("__devicekey__", "00800001eb", JSON_OBJECT("foo", "bar", "this", 7));
 SELECT * FROM devices;
