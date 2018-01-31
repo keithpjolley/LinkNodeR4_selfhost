@@ -1,2 +1,0 @@
-deviceID: 00800001eb
-factoryKey: ebac74ce-987f-4411-8f43-87f876e14d9a
