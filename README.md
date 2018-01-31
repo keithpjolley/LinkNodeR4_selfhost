@@ -9,6 +9,7 @@ the relays.
 The associated "server" software is
 [here](https://github.com/keithpjolley/LinkNodeR4_selfhost).
 
+## our story
 The purpose of this is to get a Linknode R4 to send/receive json
 data to a web server. I tried to get the sample code/API working
 without any luck and after much googling came to the conclusion
@@ -31,3 +32,6 @@ http://arduino.esp8266.com/stable/package_esp8266
 
 To program the R4 I used this FTDI USB cable:<br>
 https://www.adafruit.com/product/70
+
+The device is a LinkNode R4 Version 1.0 06/01/2016
+http://www.linksprite.com
