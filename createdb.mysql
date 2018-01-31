@@ -22,9 +22,11 @@ CREATE TABLE devices (
 # how these are generated is an exercise for a different day.
 # these are the keys associated with my device and www.linksprite.io
 
+# the only values used here are deviceID and params.relays.
+# relays is either "0" (off) or "1" (on) with as many chars as relays.
+# the "names" was just an attempt to be like www.linksprite.io but i
+# don't have a need for labeling the relays. having "relays" as a string
+# instead of an array of boolean is also to be like www.linksprite.io.
 INSERT INTO devices (deviceid, devicetype, description, params)
-  VALUES ("00800001eb", "R4", "LinkNode R4 V1.0 06/01/2016", '{"alpha":"beta","gamma":7,"delta":[1,2,3],"iota":{"a":1,"b":2,"c":3}}');
-
-#INSERT INTO devicestate (apikey, deviceid, params)
-#  VALUES ("__devicekey__", "00800001eb", JSON_OBJECT("foo", "bar", "this", 7));
-SELECT * FROM devices;
+  VALUES ("00800001eb", "R4", "LinkNode R4 V1.0 06/01/2016", '{"names":["r1","r2","r3","r4"],"relays":"0000"}');
+#SELECT * FROM devices;
